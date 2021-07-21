@@ -1,0 +1,10 @@
+#include "binary_trees.h"
+#include 
+/**
+ *binary_tree_is_bst - checks whether a binary tree is a bst
+ *@tree: pointer to root node
+ *Return:1 - true, 0 - false
+ */
+int binary_tree_is_bst(const binary_tree_t *tree)
+{
+	
