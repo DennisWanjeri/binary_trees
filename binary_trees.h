@@ -24,6 +24,16 @@ typedef struct binary_tree_s binary_tree_t;
 /* Binary search Tree */
 typedef struct binary_tree_s bst_t;
 
+/**
+ *struct levelorder_queue_s - level order transversal queue.
+ *@node: A binary tree node
+ *@next: next node to transverse to in the binary tree
+ */
+typedef struct levelorder_queue_s
+{
+	binary_tree_t *node;
+	struct levelorder_queue_s *next;
+} levelorder_queue_t;
 /*AVL Tree*/
 typedef struct binary_tree_s avl_t;
 /*max Binary Heap*/
