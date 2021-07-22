@@ -11,9 +11,9 @@ int bst_helper(const binary_tree_t *tree, int low, int high)
 {
 	if (tree != NULL)
 	{
-		if (tree->n < low || tree->n>high)
+		if (tree->n < low || tree->n > high)
 			return (0);
-		return (bst_helper(tree->left, low, tree->n -1) &&
+		return (bst_helper(tree->left, low, tree->n - 1) &&
 			bst_helper(tree->right, tree->n + 1, high));
 	}
 	return (1);
